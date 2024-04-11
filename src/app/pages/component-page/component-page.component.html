@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <h1 class="mt-5">Find 50 Component in here</h1>
+  <div class="row mt-3">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="filter-list">
+        <p>Category List</p>
+        <div class="category-list">
+          <form>
+            <div *ngFor="let category of categoryList">
+              <input type="checkbox"
+                     id="{{category.categoryId}}"
+                     name="{{category.name}}"
+                     [checked]="isSelectedCategory(category.categoryId)"
+                     (change)="toggleCategorySelection(category.categoryId)"
+                     value="{{category.name}}">
+              <label>{{category.name}}</label><br>
+            </div>
+          </form>
+        </div>
+        <p class="component-list m-2">Stores</p>
+        <div class="store-list">
+          <form>
+            <div *ngFor="let store of storeList">
+              <input type="checkbox"
+                     id="{{store.storeId}}"
+                     name="{{store.name}}"
+                     [checked]="isSelectedStore(store.storeId)"
+                     (change)="toggleStoreSelection(store.storeId)"
+                     value="{{store.name}}">
+              <label>{{store.name}}</label><br>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Components Part -->
+    <div class="col-md-9">
+      <div class="container product-cards">
+        <div *ngFor="let components of componentList" class="col-md-6">
+          <div class="border rounded p-4 m-5">
+            <app-common-component [components_details]="components"></app-common-component>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

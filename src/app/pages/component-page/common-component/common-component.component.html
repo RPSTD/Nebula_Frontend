@@ -1,0 +1,9 @@
+<div class="component-card">
+  <a href="#">
+    <img [src]="components_details.imageUrl" alt="{{components_details.name}}" width="200px">
+  </a>
+  <div class="product-details">
+    <h2>{{components_details.name}}</h2>
+    <button class="btn btn-outline-warning" (click)="navigateToComponent(components_details.componentId)">View Details</button>
+  </div>
+</div>

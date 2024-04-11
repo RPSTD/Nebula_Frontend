@@ -1,0 +1,11 @@
+.product-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.product-details h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}

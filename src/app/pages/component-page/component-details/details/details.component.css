@@ -1,0 +1,40 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.left-section,
+.right-section {
+  width: 48%; /* Adjust the width as needed */
+}
+
+.left-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  color: #111111;
+}
+
+.right-section {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  color: #111111;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+}

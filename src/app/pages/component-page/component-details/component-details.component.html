@@ -1,0 +1,54 @@
+<div class="container my-5 p-4">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="main-img">
+        <img class="img-fluid" src="{{componentDetails.componentImage}}" alt="ProductS">
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="main-description px-2">
+        <div class="product-title text-bold my-3">{{componentDetails.componentName}}</div>
+        <div class="product-details my-4">
+          <p class="details-title text-color mb-1">Component Details</p>
+          <p class="description">{{componentDetails.componentDescription}}</p>
+        </div>
+
+        <div class="delivery my-4">
+          <p class="font-weight-bold mb-1"><b>Features</b> </p>
+          <div *ngFor="let features of componentDetails.componentFeatures">
+            <li class="text-secondary mb-2">{{features}}</li>
+          </div>
+        </div>
+
+        <div class="website-details p-3">
+          <h5 class="pb-3">Available Stores</h5>
+          <div class="website-logo">
+            <a href="https://sigma-electronic.com/">
+              <img src="assets/IMG/sigma.png" alt="" width="80px">
+            </a>
+            <a href="https://tronic.lk/">
+              <img src="assets/IMG/tronic.jpg" alt="" width="80px">
+            </a>
+            <a href="https://www.senith.lk/">
+              <img src="assets/IMG/senith-logo.png" alt="" width="80px">
+            </a>
+            <a href="https://senaelectronics88.business.site/">
+              <img src="assets/IMG/sena.jpg" alt="" width="80px">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tabs container">
+  <div class="tab" [class.active-tab]="!isDetails" (click)="changeTab(0)">Tab 1</div>
+  <div class="tab"  [class.active-tab]="isDetails" (click)="changeTab(1)">Tab 2</div>
+</div>
+
+
+<app-details *ngIf="!isDetails" [details]="componentDetails"></app-details>
+<app-devolopment *ngIf="isDetails" [developmentDetails]="componentDetails"></app-devolopment>
+
+

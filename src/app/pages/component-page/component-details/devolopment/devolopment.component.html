@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="component">
+    <div class="description">
+      <h2>Product Title</h2>
+      <div class="bordered-description">
+        <div *ngFor="let details of developmentDetails.componentConnect">
+          <p>{{details}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="image">
+      <img src="{{developmentDetails.componentConnectImage}}" alt="Product Image">
+    </div>
+  </div>
+</div>

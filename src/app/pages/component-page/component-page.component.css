@@ -1,0 +1,29 @@
+.product-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.rounded{
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*.filter-list{*/
+/*  margin-top: 200px;*/
+/*}*/
+
+/*.product-cards{*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  justify-content: center;*/
+/*  margin: 10rem 0;*/
+/*}*/
+
+
+
+
+

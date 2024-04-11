@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="left-section">
+    <h2>Theory Behind the Components</h2>
+    <div *ngFor="let theory of details.componentTheory">
+      <li>{{theory}}</li>
+    </div>
+  </div>
+  <div class="right-section">
+    <h2>Statistics</h2>
+    <div *ngFor="let values of details.componentStat">
+      <li>{{values}}</li>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,29 @@
+<p>reviews works!</p>
+
+<div class="customer-details">
+  <i class="fa fa-user pb-3"></i>
+  <h1>{{customerReviewDetails.productComment}}</h1>
+  <p>{{customerReviewDetails.productName}}</p>
+  <div class="star-rating me-2">
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 1 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 2 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 3 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating >= 4 }"></span>
+    <span class="fa fa-star" [ngClass]="{ 'checked': customerReviewDetails.productRating == 5 }"></span>
+  </div>
+  <div class="website-logo mt-4">
+    <a href="https://www.amazon.com/">
+      <img src="assets/IMG/scion-logo.png" alt="" srcset="" width="100px">
+    </a>
+    <a href="https://www.ebay.com/">
+      <img src="assets/IMG/nilambara.png" alt="" srcset="" width="100px">
+    </a>
+    <a href="https://www.wish.com/">
+      <img src="assets/IMG/nc.jpg" alt="" srcset="" width="100px">
+    </a>
+    <a href="https://www.aliexpress.com/">
+      <img src="assets/IMG/microchip.png" alt="" srcset="" width="100px">
+    </a>
+  </div>
+</div>
+
